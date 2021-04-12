@@ -8,7 +8,7 @@ Hay 2 cloud functions para importar la informacion desde el data source.
 Se asume que la data historica no cambia y por lo tanto, la solucion es append only.
 
 Ambas funciones se ejecutan mediante http.
-El codigo fuente de ambas funciones esta el file main.py. Tambien se incluye el requirements.txt para cargar todas las dependencias necesarias.
+El codigo fuente de ambas funciones esta en el file main.py. Tambien se incluye el requirements.txt para cargar todas las dependencias necesarias.
 
 La base de datos esta en Bigquery y hay una tabla Incidents que se actualiza todos los dias.
 
