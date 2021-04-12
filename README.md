@@ -1,6 +1,6 @@
 # FireIncidentGCP
 
-El ejercicio usa GCP, DBT y Google Data Studio como herramienta de reporting.
+El ejercicio usa GCP y Google Data Studio como herramienta de reporting.
 
 Hay 2 cloud functions para importar la informacion desde el data source.
 * load_history: Importa un CSV desde una URL y hace el dump dentro de la tabla Incidents en BigQuery. Se ejecuta ondemand.
@@ -11,7 +11,7 @@ El codigo fuente de ambas funciones esta el file main.py. Tambien se incluye el 
 
 La base de datos esta en Bigquery y hay una tabla Incidents que se actualiza todos los dias.
 
-Hay una vista VW_Incidents que la crea DBT y es usada por Google Data Studio.
+Hay una vista VW_Incidents que es usada por Google Data Studio. Se incluye el archivo views.sql con el script de la vista.
 
 Hay un script Terraform de deploy, que crea el storage, cloud function, job y el dataset de Bigquery.
 La tabla no es necesaria crearla previamente, ya que la funcion load_history la crea en caso de no existir.
